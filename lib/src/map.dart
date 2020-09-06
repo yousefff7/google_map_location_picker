@@ -171,7 +171,7 @@ class MapPickerState extends State<MapPicker> {
           GoogleMap(
             myLocationButtonEnabled: false,
             initialCameraPosition: CameraPosition(
-              target: widget.initialCenter,
+              target: _currentPosition //widget.initialCenter,
               zoom: widget.initialZoom,
             ),
             onMapCreated: (GoogleMapController controller) {
