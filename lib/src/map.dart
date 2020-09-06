@@ -244,11 +244,17 @@ class MapPickerState extends State<MapPicker> {
                           _address = address;
                           return Row(
                           children: [
-                             Text(
+                            Flexible(
+                          child: Container(
+                          child:  Text(
                             address ?? 'Unnamed place',
+                                    softWrap: true
                             style: widget.resultCardTextStyle ??
                                 TextStyle(fontSize: 18),
                           ),
+                           ),
+                             ),
+                            
                              Spacer(),
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
