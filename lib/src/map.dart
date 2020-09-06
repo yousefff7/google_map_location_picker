@@ -209,6 +209,7 @@ class MapPickerState extends State<MapPicker> {
             onMyLocationPressed: _initCurrentLocation,
             fabsBackgroundColor: widget.fabsColor,
             fabsIconsColor: widget.fabsIconsColor,
+            navigatePage:widget.navigatePage,
           ),
           pin(),
           locationCard(),
@@ -262,7 +263,7 @@ class MapPickerState extends State<MapPicker> {
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
                                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
-                return widget.navigatePage();
+                return widget.navigatePage;
               }));       
 //                       Navigator.of(context).pop({
 //                         'location': LocationResult(
