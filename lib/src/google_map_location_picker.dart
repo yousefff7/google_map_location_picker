@@ -458,6 +458,7 @@ class LocationPickerState extends State<LocationPicker> {
             resultCardShape: widget.resultCardShape,
             resultCardTextStyle: widget.resultCardTextStyle,
             fabsIconsColor: widget.fabsIconsColor,
+            navigatePage:widget.navigatePage,
             key: mapKey,
             language: widget.language,
           ),
@@ -505,6 +506,7 @@ Future<LocationResult> showLocationPicker(
   Color fabsColor,
   Color searchOverLaybackgroundColor,
   Color fabsIconsColor,
+    Widget navigatePage,
     
   String language,
 
@@ -540,7 +542,7 @@ Future<LocationResult> showLocationPicker(
           resultCardTextStyle: resultCardTextStyle,
           searchOverLaybackgroundColor: searchOverLaybackgroundColor,
           fabsIconsColor: fabsIconsColor,
-          
+          navigatePage:navigatePage,
          
           countries: countries,
           language: language,
