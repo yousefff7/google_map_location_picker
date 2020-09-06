@@ -45,7 +45,7 @@ class LocationPicker extends StatefulWidget {
     this.resultCardTextStyle,
     this.searchOverLaybackgroundColor,
     this.fabsIconsColor,
-                this.navigatePage,
+//                 this.navigatePage,
 
       
     this.countries,
@@ -83,7 +83,7 @@ class LocationPicker extends StatefulWidget {
   final Color fabsColor;
   final Color searchOverLaybackgroundColor;
   final Color fabsIconsColor;
-    final Widget navigatePage;
+//     final Widget navigatePage;
 
 
   final String language;
@@ -458,7 +458,7 @@ class LocationPickerState extends State<LocationPicker> {
             resultCardShape: widget.resultCardShape,
             resultCardTextStyle: widget.resultCardTextStyle,
             fabsIconsColor: widget.fabsIconsColor,
-            navigatePage:widget.navigatePage,
+//             navigatePage:widget.navigatePage,
             key: mapKey,
             language: widget.language,
           ),
@@ -506,7 +506,7 @@ Future<LocationResult> showLocationPicker(
   Color fabsColor,
   Color searchOverLaybackgroundColor,
   Color fabsIconsColor,
-    Widget navigatePage,
+//     Widget navigatePage,
     
   String language,
 
@@ -542,7 +542,7 @@ Future<LocationResult> showLocationPicker(
           resultCardTextStyle: resultCardTextStyle,
           searchOverLaybackgroundColor: searchOverLaybackgroundColor,
           fabsIconsColor: fabsIconsColor,
-          navigatePage:navigatePage,
+//           navigatePage:navigatePage,
          
           countries: countries,
           language: language,
