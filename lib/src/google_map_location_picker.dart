@@ -45,6 +45,8 @@ class LocationPicker extends StatefulWidget {
     this.resultCardTextStyle,
     this.searchOverLaybackgroundColor,
     this.fabsIconsColor,
+                this.navigatePage,
+
       
     this.countries,
     this.language = 'en',
@@ -81,6 +83,8 @@ class LocationPicker extends StatefulWidget {
   final Color fabsColor;
   final Color searchOverLaybackgroundColor;
   final Color fabsIconsColor;
+    final Widget navigatePage;
+
 
   final String language;
 
