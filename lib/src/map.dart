@@ -248,7 +248,7 @@ class MapPickerState extends State<MapPicker> {
                           child: Container(
                           child:  Text(
                             address ?? 'Unnamed place',
-                                    softWrap: true
+                                    softWrap: true,
                             style: widget.resultCardTextStyle ??
                                 TextStyle(fontSize: 18),
                           ),
