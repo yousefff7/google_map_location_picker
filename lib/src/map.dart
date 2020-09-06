@@ -229,7 +229,7 @@ class MapPickerState extends State<MapPicker> {
               child: Row(
               children:[
               Flexible(
-                    flex: 40,
+                    flex: 20,
                     child: FutureLoadingBuilder<String>(
                         future: getAddress(locationProvider.lastIdleLocation),
                         mutable: true,
@@ -245,6 +245,7 @@ class MapPickerState extends State<MapPicker> {
                           children: [
                             Flexible(
                           child: Container(
+                            width:250,
                           child:  Text(
                             address ?? 'Unnamed place',
                                     softWrap: true,
