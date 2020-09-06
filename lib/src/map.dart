@@ -262,7 +262,7 @@ class MapPickerState extends State<MapPicker> {
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
-                      print(address);
+                      print("Address is : $_address" );
                                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
                 return widget.navigatePage;
               }));       
