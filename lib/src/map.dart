@@ -226,10 +226,7 @@ class MapPickerState extends State<MapPicker> {
               builder: (context, locationProvider, _) {
             return Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Row(
-//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Flexible(
+              child: Flexible(
                     flex: 20,
                     child: FutureLoadingBuilder<String>(
                         future: getAddress(locationProvider.lastIdleLocation),
@@ -270,8 +267,7 @@ class MapPickerState extends State<MapPicker> {
                         Icon(Icons.arrow_forward),
                   ),
                           
-                          ],
-                          );
+                    
                             
                            
                         }),
