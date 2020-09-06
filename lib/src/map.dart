@@ -42,7 +42,7 @@ class MapPicker extends StatefulWidget {
     this.resultCardTextStyle,
     this.fabsColor,
     this.fabsIconsColor,
-//           this.navigatePage,
+          this.navigatePage,
 
       
     this.language,
@@ -73,7 +73,7 @@ class MapPicker extends StatefulWidget {
   final ShapeBorder resultCardShape;
   final Color fabsColor;
   final Color fabsIconsColor;
-//     final Widget navigatePage;
+    final Widget navigatePage;
 
 
   final String language;
@@ -262,15 +262,15 @@ class MapPickerState extends State<MapPicker> {
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
-//                                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
-//                 return widget.navigatePage;
-//               }));       
-                      Navigator.of(context).pop({
-                        'location': LocationResult(
-                          latLng: locationProvider.lastIdleLocation,
-                          address: _address,
-                        )
-                      });
+                                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+                return widget.navigatePage;
+              }));       
+//                       Navigator.of(context).pop({
+//                         'location': LocationResult(
+//                           latLng: locationProvider.lastIdleLocation,
+//                           address: _address,
+//                         )
+//                       });
                     },
                     child: widget.resultCardConfirmIcon ??
                         Icon(Icons.arrow_forward),
