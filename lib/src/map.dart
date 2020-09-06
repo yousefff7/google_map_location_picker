@@ -262,8 +262,8 @@ class MapPickerState extends State<MapPicker> {
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
+                      print(address);
                                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
-                                                        
                 return widget.navigatePage;
               }));       
 //                       Navigator.of(context).pop({
