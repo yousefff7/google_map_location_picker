@@ -242,15 +242,14 @@ class MapPickerState extends State<MapPicker> {
                         ),
                         builder: (context, address) {
                           _address = address;
-                          return Text(
+                          return Row(
+                          children: [
+                             Text(
                             address ?? 'Unnamed place',
                             style: widget.resultCardTextStyle ??
                                 TextStyle(fontSize: 18),
-                          );
-                        }),
-                  ),
-                  Spacer(),
-                  address!=null?
+                          ),
+                             Spacer(),
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
@@ -263,7 +262,15 @@ class MapPickerState extends State<MapPicker> {
                     },
                     child: widget.resultCardConfirmIcon ??
                         Icon(Icons.arrow_forward),
-                  ):SizedBox(height: 0,),
+                  ),
+                          
+                          ],
+                          );
+                            
+                           
+                        }),
+                  ),
+       
                 ],
               ),
             );
