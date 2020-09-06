@@ -264,10 +264,7 @@ class MapPickerState extends State<MapPicker> {
                     onPressed: () {
                                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
                                                         
-                return widget.navigatePage(      'location': LocationResult(
-                          latLng: locationProvider.lastIdleLocation,
-                          address: _address,
-                        ),);
+                return widget.navigatePage;
               }));       
 //                       Navigator.of(context).pop({
 //                         'location': LocationResult(
