@@ -227,7 +227,7 @@ class MapPickerState extends State<MapPicker> {
             return Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Flexible(
                     flex: 20,
