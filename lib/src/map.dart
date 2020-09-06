@@ -245,7 +245,6 @@ class MapPickerState extends State<MapPicker> {
                           children: [
                             Flexible(
                           child: Container(
-                            width:250,
                           child:  Text(
                             address ?? 'Unnamed place',
                                     softWrap: true,
@@ -255,7 +254,6 @@ class MapPickerState extends State<MapPicker> {
                            ),
                              ),
                             
-                             Spacer(),
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
