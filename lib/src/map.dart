@@ -245,6 +245,7 @@ class MapPickerState extends State<MapPicker> {
                           children: [
                             Flexible(
                           child: Container(
+                          margin: EdgeInsets.fromLTRB(10, 0.0, 0.0, 0),
                           child:  Text(
                             address ?? 'Unnamed place',
                                     softWrap: true,
