@@ -250,6 +250,7 @@ class MapPickerState extends State<MapPicker> {
                         }),
                   ),
                   Spacer(),
+                  address!=null?
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
@@ -262,7 +263,7 @@ class MapPickerState extends State<MapPicker> {
                     },
                     child: widget.resultCardConfirmIcon ??
                         Icon(Icons.arrow_forward),
-                  ),
+                  ):SizedBox(height: 0,),
                 ],
               ),
             );
