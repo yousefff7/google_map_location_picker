@@ -226,7 +226,9 @@ class MapPickerState extends State<MapPicker> {
               builder: (context, locationProvider, _) {
             return Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Flexible(
+              child: Row(
+              children:[
+              Flexible(
                     flex: 20,
                     child: FutureLoadingBuilder<String>(
                         future: getAddress(locationProvider.lastIdleLocation),
@@ -266,7 +268,8 @@ class MapPickerState extends State<MapPicker> {
                     child: widget.resultCardConfirmIcon ??
                         Icon(Icons.arrow_forward),
                   ),
-                          
+                        ],
+                            );
                     
                             
                            
