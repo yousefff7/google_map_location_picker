@@ -262,14 +262,10 @@ class MapPickerState extends State<MapPicker> {
                   FloatingActionButton(
                     backgroundColor: widget.fabsColor,
                     onPressed: () {
-                       Navigator.of(context).pop({
-                          address: _address,
-                        
-                      });
-//                                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+                                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
                                                         
-//                 return widget.navigatePage;
-//               }));       
+                return widget.navigatePage( address: _address);
+              }));       
 //                       Navigator.of(context).pop({
 //                         'location': LocationResult(
 //                           latLng: locationProvider.lastIdleLocation,
